@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web&display=swap');
+
+
+
 /* CSS RESET */
 *{
     margin: 0;
@@ -11,14 +15,14 @@ a{
 }
 
 header{
-    background-color: #000000;
+    background-color: #070A11;
     height: 150px;
     padding-top: 20px;
 }
 
-img{
-    height: 100px;
-}
+/*img{
+    height: px;
+}*/
 
 .container-grid{
     width: 1200px;
@@ -35,10 +39,147 @@ img{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    font-family: "Roboto";
 }
 
 .menu{
     width: 700px;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between; 
 }
+
+.icone-menu{
+    height: 40px;
+}
+
+#barras{
+    display: none;
+}
+
+.banner{
+    height: 603px;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.conteudo-banner p{
+    color: white;
+    font-family: "Roboto";
+    font-size: 32px;
+    margin-top: 230px;
+}
+
+.conteudo-banner a{
+    padding: 15px;
+    background-color: #B81313;   
+    color: white;
+    font-family: "Roboto";
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 32px;
+    border-radius: 40px;
+    margin-top: 15px;
+    margin-left: 100px;
+}
+
+.conteudo-banner{
+    width: 497px;
+    height: 237px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .posicionamento-banner{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 60%; 
+    }
+
+    .brands{
+        background-image: linear-gradient(to right, #210404, #321010, #D17D7B);
+        height: 120px;
+    }
+
+    .posicionamento-brands{
+        height: 100%;
+        margin-left: 5%;
+    }
+
+    .container{
+        max-width: 1200px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .container-grid{
+            width: 1000px;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        #barras{
+            display: inline-block;
+        }
+
+        .menu{
+            display: none;
+            position: absolute;
+            top: 120px;
+            right: 0px;
+
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            background-color: #070A11;
+            height: 400px;
+        }
+
+        .menu-ativo{
+            display: flex;
+        }
+
+        .container-grid{
+            width: 800px;
+        }
+    }
+
+    .loja{
+        height: 891px;
+        background-image: url(../img/Group\ 26.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .noticias{
+        height: 456px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .banner-mibr{
+        background-image: url(../img/MIBR.png);
+    }
+
+    .banner-loud{
+        background-image: url(../img/LOUD.jpg);
+    }
+
+    .banner-furia{
+        background-image: url(../img/FURIA.jpg);
+    }
+
+    .links{
+        height: 206px;
+        background-image: url(../img/Group\ 27.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
